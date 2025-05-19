@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+button.cell {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+button.cell:hover {
+    background-color: lightgray;
+}
+
+button.cell:disabled {
+    background-color: white;
+    color: gray;
+    cursor: not-allowed;
+}
+
+.reset {
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: gray;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.toggle {
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.toggle:hover {
+    background-color: blue;
+}
